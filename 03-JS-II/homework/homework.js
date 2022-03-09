@@ -41,39 +41,39 @@ function conection(status) {
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
-  // Si "idioma" es "Noruego", devuelve "God dag!"
-  // Si "idioma" es "Japonés", devuelve "こんにちわ!"
-  // Si "idioma" es "Inglés", devuelve "Hello!"
+  // Si "idioma" es "aleman", devuelve "Guten Tag!"
+  // Si "idioma" es "mandarin", devuelve "Ni Hao!"
+  // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "¡Hola!"
   // Escribe tu código aquí:
-  if(idioma === 'Noruego') {
-    return "God dag!";
-  } else if(idioma === 'Japonés') {
-    return "こんにちわ";
-  } else if(idioma === 'Inlés') {
-    return "Hello";
+  if(idioma === 'aleman') {
+    return "Guten Tag!";
+  } else if(idioma === 'mandarin') {
+    return "Ni Hao!";
+  } else if(idioma === 'ingles') {
+    return "Hello!";
   } else {
-    return "¡Hola!";
+    return "Hola!";
   }
 }
 
 function colors(color) {
   // La función recibe un color. Devolver el string correspondiente:
-  // En caso que el color recibido sea "Azul", devuleve --> "This is blue"
-  // En caso que el color recibido sea "Rojo", devuleve --> "This is red"
-  // En caso que el color recibido sea "Verde", devuleve --> "This is green"
-  // En caso que el color recibido sea "Naranja", devuleve --> "This is orange"
+  // En caso que el color recibido sea "blue", devuleve --> "This is blue"
+  // En caso que el color recibido sea "red", devuleve --> "This is red"
+  // En caso que el color recibido sea "green", devuleve --> "This is green"
+  // En caso que el color recibido sea "orange", devuleve --> "This is orange"
   // Caso default: devuelve --> "Color not found"
   // Usar el statement Switch
   // Escribe tu código aquí:
   switch (color) {
-    case "Azul":
+    case "blue":
       return "This is blue";
-    case "Rojo":
+    case "red":
       return "This is red"
-    case "Verde":
+    case "green":
       return "This is green"
-    case "Naranja":
+    case "orange":
       return "This is orange"
     default:
       return "Color not found"
@@ -125,13 +125,13 @@ function operadoresLogicos(num1, num2, num3) {
   // Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
   // Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor
-  // 0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error!"
+  // 0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error"
   // Si no se cumplen ninguna de las condiciones anteriores, retornar false
   // Escribe tu código aquí:
   if(num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   } else if(num1 === 0 || num2 === 0 || num3 === 0) {
-    return "Error!";
+    return "Error";
   } else if(num1 > 0 && num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
   } else if(num3 > num1 && num3 > num2) {
@@ -181,7 +181,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   // Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false
   // Escribe tu código aquí:
-  if(numero < 99 && numero > 1000) {
+  if(numero > 99 && numero < 1000) {
     return true
   } return false
 }
