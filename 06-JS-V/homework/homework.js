@@ -17,7 +17,7 @@ function crearUsuario() {
     this.password = opciones.password
   }
   Usuario.prototype.saludar = function() {
-    return 'Hola, mi nomebre es ' + this.nombre;
+    return 'Hola, mi nombre es ' + this.nombre;
   }; return Usuario;
 }
 
@@ -26,7 +26,7 @@ function agregarMetodoPrototype(Constructor) {
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Escribe tu código aquí:
   Constructor.prototype.saludar = function() {
-    return "Hello world!";
+    return "Hello World!";
   };
 }
 
